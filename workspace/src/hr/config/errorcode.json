@@ -1,0 +1,13 @@
+{
+	"00" : "Success",
+	"01" : "Failed",
+	"02" : "Request id duplicated",
+	"04" : "Invalid signature",
+	"07" : "Invalid url",
+	"08" : "Cannot get edemo name",
+	"09" : "Deserialize failed",
+	"11" : "Unsupport method",
+	"68" : "Timeout",
+	"90" : "System Error",    
+	"95" : "Wrong data format"
+}

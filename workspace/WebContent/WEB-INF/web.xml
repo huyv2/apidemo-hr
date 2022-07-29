@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>edemo</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+  </welcome-file-list>
+  
+  <servlet>
+    <display-name>Log4jServletInit</display-name>
+    <servlet-name>Log4jServletInit</servlet-name>
+    <servlet-class>hr.init.Log4jServletInit</servlet-class>
+    <load-on-startup>0</load-on-startup>
+  </servlet>
+  <servlet>
+    <display-name>ApplicationServletInit</display-name>
+    <servlet-name>ApplicationServletInit</servlet-name>
+    <servlet-class>hr.init.ApplicationServletInit</servlet-class>
+    <load-on-startup>1</load-on-startup>
+  </servlet>
+
+  <servlet>
+    <servlet-name>Test</servlet-name>
+    <servlet-class>hr.function.abc.TestFunction</servlet-class>
+    <async-supported>true</async-supported>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>Test</servlet-name>
+  	<url-pattern>/abc/link/test</url-pattern>
+  </servlet-mapping>
+</web-app>
